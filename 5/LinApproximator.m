@@ -14,7 +14,7 @@ end
 P = g\(y');
 Err_0 = sqrsum(y - g*P)/N;
 
-Gk = trace(G);
+Gk = trace((g'*g));
 sgP = sqrt(Err_0/(2*Gk));
 
 end
